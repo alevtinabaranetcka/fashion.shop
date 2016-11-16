@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Template_desktop</title>
-    <link href="main.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/tablet.css" type="text/css" rel="stylesheet" media="only screen
+    and (min-device-width : 768px) and (max-device-width : 1200px)">
     <script src="https://use.fontawesome.com/e60d01d408.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
@@ -78,10 +80,16 @@
                 </li>
             </ul>
         </div>
-        <div class="bag">
-
+        <div class="right_bloc">
+            <div class="card">
+                <form action="#" method="post">
+                    <input type="text" id="cardcode" pattern="[0-9]{4}\s[0-9]{4}\s[0-9]{4}\s[0-9]{4}" placeholder="Your card">
+                </form>
+            </div>
+                <div class="bag_image"><a href="#"><img src="image/bag.png"></a></div>
+                <div class="bag_text"><a href="#">0 items | 0 $</a> </div>
         </div>
-    </div>
+
 </header>
 
 <!-- <script>

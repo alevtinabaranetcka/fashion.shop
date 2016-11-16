@@ -3,7 +3,7 @@
     padding: 0;
 }
 body {
-    margin: 0 86px;
+    margin: 0 7.166666666666667%;
     max-width: 1200px;
     width: 100%;
     font-family: Arial, sans-serif;
@@ -15,11 +15,11 @@ a {
 .top {
     background-color: black;
     box-sizing: border-box;
-    width: 1200px;
+    width: 100%;
     height: 30px;
 }
 .top_left p {
-    padding: 11px 4px 11px 114px;
+    padding: 9px 4px 11px 115px;
     display: inline-block;
     float: left;
     color: white;
@@ -29,7 +29,7 @@ a {
 }
 .top_left p:last-child {
     font-size: 0.750em;
-    padding: 10px 0 11px 4px;
+    padding: 8px 0 11px 6px;
 }
 .top_right {
     padding-right: 115px;
@@ -54,7 +54,7 @@ a {
     margin-right: 14px;
     overflow: hidden;
     width: 56px;
-    background: url("image/select.png")no-repeat right;
+    background: url("../image/select.png")no-repeat right;
 }
 
 .user {
@@ -97,7 +97,7 @@ input[type=text] {
     box-sizing: border-box;
     border: none;
     background-color: inherit;
-    background-image: url('image/search.png');
+    background-image: url('../image/search.png');
     background-position: 10px 5px;
     background-repeat: no-repeat;
     padding: 6px;
@@ -112,18 +112,18 @@ input[type=text]:focus {
     }
 .top_line {
     box-sizing: border-box;
-    width: 971px;
-    margin-left: 114px;
-    margin-right: 115px;
-    padding: 6px;
+    width: 80.91666666666667%;
+    margin-left: 9.5%;
+    margin-right: 9.583333333333333%;
+    padding: 4px;
 }
 .logo {
     display: inline-block;
-    padding: 42px 0 36px 0;
+    padding: 38px 0 36px 0;
 }
 
 .menu {
-    margin-left: 179px;
+    margin-left: 15.917%;
     display: inline-block;
     }
  ul.nav {
@@ -144,11 +144,14 @@ ul.nav > li {
 }
 ul.nav > li > a {
     display: block;
-    padding: 0 15px 0 5px;
+    padding: 0 27px 0 5px;
     text-decoration: none;
     font-size: 1.000em;
-    font-weight: 400;
+    font-weight: 500;
     color: black;
+}
+ul.nav > li > a:last-child {
+    padding-right: 0;
 }
 .nav img {
     padding: 2px 3px;
@@ -180,6 +183,43 @@ ul.nav > li:hover > ul.submenu {
     display: block;
 }
 
+#cardcode {
+    background: transparent;
+    box-sizing: border-box;
+    box-shadow: none;
+    width: 240px;
+    height: 32px;
+    color: #949393;
+    font-size: 0.750em;
+    border-bottom: solid 1px #d6d6d6;
+}
+.right_bloc {
+    margin-top: 18px;
+    box-sizing: border-box;
+    width: 212px;
+    height: 64px;
+    overflow: hidden;
+    border: solid 1px #d6d6d6;
+    float: right;
+}
+.card {
+    background: url("../image/select.png")no-repeat right;
+    width: 196px;
+    }
+.bag_image {
+    padding: 5px 0 0 9px;
+    display: inline-block;
+}
+.bag_text {
+    padding: 9px 13px 8px 0;
+    font-size: 0.6667em;
+    text-transform: uppercase;
+    display: inline-block;
+    float: right;
+}
+.bag_text a {
+    color: #949393;
+}
 
 
 
