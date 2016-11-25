@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Template_desktop</title>
     <link href="css/main.css" rel="stylesheet" type="text/css">
-    <link href="css/tablet.css" type="text/css" rel="stylesheet" media="only screen
-    and (min-device-width : 768px) and (max-device-width : 1200px)"
-          media="only screen and (min-device-width : 768px) and (max-device-width : 997px)">
+    <link href="css/tablet.css" type="text/css" rel="stylesheet"
+          media="only screen and (min-device-width : 768px) and (max-device-width : 1199px)">
+    <link href="css/mobile.css" type="text/css" rel="stylesheet"
+          media="only screen and (min-device-width : 640px) and (max-device-width : 768px)">
+    <link href="css/mobile(320).css" type="text/css" rel="stylesheet"
+          media="only screen and (min-device-width : 320px) and (max-device-width : 640px)">
     <script src="https://use.fontawesome.com/e60d01d408.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
 </head>
 <body>
 <header>
@@ -26,7 +31,8 @@
             </select>
             </div>
             <div class="user">
-            <a href="#"><i class="fa fa-user" aria-hidden="true"></i>my account</a>
+
+            <a href="#"> <img src="image/user.png">my account</a>
             </div>
             <div class="search">
                 <!--<button id="open"></button>-->
@@ -40,46 +46,50 @@
     </div>
     <div class="top_line">
         <div class="logo">
-            <img src="image/logo.png">
+            <img src="image/logo-big.png">
         </div>
         <div class="menu">
-            <ul class="nav">
-                <li><a href="#">new<img src="image/caret-down.png"></a>
-                    <ul class="submenu">
-                        <li><a href=#>Sudmenu 1</a></li>
-                        <li><a href=#>Sudmenu 1</a></li>
-                        <li><a href=#>Sudmenu 1</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">designers<img src="image/caret-down.png"></a>
-                    <ul class="submenu">
-                        <li><a href=#>Sudmenu 2</a></li>
-                        <li><a href=#>Sudmenu 2</a></li>
-                        <li><a href=#>Sudmenu 2</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">women<img src="image/caret-down.png"></a>
-                    <ul class="submenu">
-                        <li><a href=#>Sudmenu 3</a></li>
-                        <li><a href=#>Sudmenu 3</a></li>
-                        <li><a href=#>Sudmenu 3</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">men<img src="image/caret-down.png"></a>
-                    <ul class="submenu">
-                        <li><a href=#>Sudmenu 4</a></li>
-                        <li><a href=#>Sudmenu 4</a></li>
-                        <li><a href=#>Sudmenu 4</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">clearence<img src="image/caret-down.png"></a>
-                    <ul class="submenu">
-                        <li><a href=#>Sudmenu 5</a></li>
-                        <li><a href=#>Sudmenu 5</a></li>
-                        <li><a href=#>Sudmenu 5</a></li>
-                    </ul>
-                </li>
-            </ul>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">new<img src="image/caret-down.png"></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">designers<img src="image/caret-down.png"></button>
+                    <div id="myDropdown2" class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">women<img src="image/caret-down.png"></button>
+                <div id="myDropdown3" class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">men<img src="image/caret-down.png"></button>
+                <div id="myDropdown4" class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">clearence<img src="image/caret-down.png"></button>
+                <div id="myDropdown5" class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
         </div>
         <div class="right_bloc">
             <div class="card">
@@ -87,10 +97,23 @@
                     <input type="text" id="cardcode" pattern="[0-9]{4}\s[0-9]{4}\s[0-9]{4}\s[0-9]{4}" placeholder="Your card">
                 </form>
             </div>
-                <div class="bag_image"><a href="#"><img src="image/bag.png"></a></div>
+                <div class="bag_image"><a href="#"><img src="image/bag-big.png"></a></div>
                 <div class="bag_text"><a href="#">0 items | 0 $</a> </div>
         </div>
-
+        <div class="menu_mobile">
+            <div id="menu_mobile" class="dropdown">
+                <button onclick="myFunction()" id="btn-text" class="dropbtn">menu</button>
+                <button onclick="myFunction()" id="btn-bar" class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                <div id="myDropdownMenu" class="dropdown-content">
+                    <a href="#">new</a>
+                    <a href="#">designers</a>
+                    <a href="#">women</a>
+                    <a href="#">men</a>
+                    <a href="#">clearence</a>
+                </div>
+            </div>
+        </div>
+        </div>
 </header>
 
 
