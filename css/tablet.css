@@ -80,5 +80,8 @@
         background-color: #fd926d;
         color: white;
     }
+    .socLine {
+        padding: 0 15px;
+    }
 
 }

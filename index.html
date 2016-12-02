@@ -14,6 +14,7 @@
     <script src="https://use.fontawesome.com/e60d01d408.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
 
 </head>
 <body>
@@ -38,7 +39,7 @@
                 <!--<button id="open"></button>-->
                 <div id="form">
                     <form action="#" method="post">
-                        <input type="text" value="" placeholder=""/>
+                        <input class="search-form" type="text" value="" placeholder=""/>
                     </form>
                 </div>
             </div>
@@ -115,7 +116,52 @@
         </div>
         </div>
 </header>
-
+<article>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="image/slide.png">
+        </div>
+        <div class="mySlides fade">
+            <img src="image/slide.png">
+        </div>
+        <div class="mySlides fade">
+            <img src="image/slide.png">
+        </div>
+        <div class="mySlides fade">
+            <img src="image/slide.png">
+        </div>
+        <div class="mySlides fade">
+            <img src="image/slide.png">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <div class="socLine">
+        <div class="mail">
+            <p>Stay update</p>
+            <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+                <input class="mail-form" type="text" name="mail" placeholder="Your email address">
+                <input class="mail-submit" type="submit" value="">
+            </form>
+        </div>
+        <div class="share">
+            <div class="share-text">
+                <p>Find us here</p>
+            </div>
+            <div class="share-f"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+            <div class="share-t"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+            <div class="share-p"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></div>
+        </div>
+    </div>
+</article>
 
 
 </body>

@@ -56,7 +56,7 @@
         height: 15px;
         padding: 41px 10px 30px 10px;
     }
-    input[type=text] {
+    input.search-form {
         width: 54px;
         box-sizing: border-box;
         border: none;
@@ -158,5 +158,11 @@
     .dropdown-content a:hover, .dropdown-content a:focus {
         background-color: #fd926d;
         color: white;
+    }
+    .slideshow-container {
+        display: none;
+    }
+    .dot {
+        display: none;
     }
 }

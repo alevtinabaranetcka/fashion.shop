@@ -56,7 +56,7 @@
      height: 35px;
      padding: 30px 15px 30px 65px;
  }
-    input[type=text] {
+    input.search-form {
         width: 99px;
         box-sizing: border-box;
         border: none;
@@ -171,5 +171,81 @@
     .dropdown-content a:hover, .dropdown-content a:focus {
         background-color: #fd926d;
         color: white;
+    }
+    .slideshow-container {
+        display: none;
+    }
+    .dot {
+        display: none;
+    }
+    .socLine {
+        text-align: center;
+        margin: 0 auto;
+        display: inline-block;
+        box-sizing: border-box;
+        width: auto;
+        height: auto;
+        background-color: white;
+        vertical-align: middle;
+
+    }
+    .mail {
+        margin: 0 auto;
+        background-color: #ededed;
+        display: inline-flex;
+        box-sizing: border-box;
+        vertical-align: middle;
+        height: 96px;
+        width: 611px;
+            }
+    .mail p {
+        display: none;
+    }
+
+    input.mail-submit {
+        margin-left: 0;
+        width: 96px;
+        height: 96px;
+        border: none;
+        background: url("../image/btn-mail-big.png")no-repeat right;
+    }
+    input.mail-form  {
+        padding-left: 30px;
+        font-style: italic;
+        float: left;
+        font-size: 1.500em;
+        display: inline-block;
+        background-color: #ededed;
+        width: 515px;
+        height: 96px;
+        box-sizing: border-box;
+    }
+    input.mail-form:focus {
+        width: 515px;
+    }
+    .share {
+        line-height: 90px;
+        margin-top: 25px;
+        vertical-align: middle;
+        float: none;
+        width: 447px;
+        height: 90px;
+    }
+    .share a {
+        font-size: 2em;
+            }
+    .share p {
+        font-size: 1.5em;
+        padding-right: 34px;
+    }
+    .share-t {
+        background-color: #ededed;
+        padding: 0 28px;
+    }
+    .share-f {
+        padding: 0 35px;
+    }
+    .share-p {
+        padding: 0 29px;
     }
 }
