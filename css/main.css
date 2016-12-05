@@ -356,6 +356,37 @@ input.mail-form:focus {
 .share-p {
     padding: 0 17px;
 }
+.banners {
+    margin: 0 auto;
+    display: block;
+    box-sizing: border-box;
+    width: 972px;
+    height: 339px;
+    text-align: center;
+}
+.banners-left {
+    display: inline-block;
+    float: left;
+}
+.banners-right {
+    display: inline-block;
+    float: right;
+}
+.banners-l {
+    display: block;
+    width: 484px;
+    height: 339px;
+}
+.banners-m {
+    display: block;
+    width: 486px;
+    height: 172px;
+}
+.banners-s {
+    display: inline-block;
+    width: 240px;
+    height: 169px;
+}
 
 
 
