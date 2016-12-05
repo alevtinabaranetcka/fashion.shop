@@ -229,6 +229,11 @@ input[type=text]:focus {
     display: block;
     position: relative;
 }
+.mySlides  {
+    width: 88.95478131949592%;
+    height: 32.76501111934766%;
+}
+
 .dot {
     width: 10px;
     height: 10px;
@@ -258,9 +263,9 @@ input[type=text]:focus {
 }
 .prev, .next {
     cursor: pointer;
-    top: 50%;
+    top: 40%;
     width: auto;
-    margin-top: -22px;
+
     padding: 40px 10px;
     color: #cacac9;
     background-color: white;

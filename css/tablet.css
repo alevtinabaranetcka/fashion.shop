@@ -1,4 +1,4 @@
-@media only screen and (min-width : 768px) and (max-width : 1199px) {
+@media only screen and (min-width : 760px) and (max-width : 1199px) {
     body {
         width: 100%;
         margin: 0;
@@ -84,6 +84,18 @@
         color: white;
 
     }
+
+
+    .mySlides  img {
+
+        width: 113.338%;
+        height: auto;
+    }
+    .prev, .next {
+        margin-top: 0;
+        top: 30%;
+    }
+
     .socLine {
         padding: 0 15px;
     }
