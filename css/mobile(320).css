@@ -165,4 +165,7 @@
     .dot {
         display: none;
     }
+    .banners {
+        display: none;
+    }
 }

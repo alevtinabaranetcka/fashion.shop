@@ -248,4 +248,7 @@
     .share-p {
         padding: 0 29px;
     }
+    .banners {
+        display: none;
+    }
 }
