@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Template_desktop</title>
+    <title>Homepage_desktop</title>
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <link href="css/tablet.css" type="text/css" rel="stylesheet"
           media="only screen and (min-width : 760px) and (max-width : 1199px)">
     <link href="css/mobile.css" type="text/css" rel="stylesheet"
           media="only screen and (min-width : 640px) and (max-width : 760px)">
-    <link href="css/mobile(320).css" type="text/css" rel="stylesheet"
-          media="only screen and (min-width : 320px) and (max-width : 640px)">
+    <link href="css/mobile(320).css" type="text/css" rel="stylesheet">
     <script src="https://use.fontawesome.com/e60d01d408.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/tab.js"></script>
 
 </head>
 <body>
@@ -105,7 +105,7 @@
             <div id="menu_mobile" class="dropdown">
                 <button onclick="myFunction()" id="btn-text" class="dropbtn">menu</button>
                 <button onclick="myFunction()" id="btn-bar" class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
-                <div id="myDropdown" class="dropdown-content">
+                <div id="myDropdown_mobile_menu" class="dropdown-content">
                     <a href="#">new</a>
                     <a href="#">designers</a>
                     <a href="#">women</a>
@@ -163,15 +163,256 @@
     </div>
     <div class="banners">
         <div class="banners-left">
-            <div class="banners-l"><img src="image/baner-1.png"></div>
+            <div class="banners-l"><a href="#"><img src="image/baner-1.png"></a></div>
         </div>
         <div class="banners-right">
-            <div class="banners-m"><img src="image/baner-2.png"></div>
-            <div class="banners-s"><img src="image/baner-3.png"></div>
-            <div class="banners-s"><img src="image/baner-4.png"></div>
+            <div class="banners-m"><a href="#"><img src="image/baner-2.png"></a></div>
+            <div class="banners-s"><a href="#"><img src="image/baner-3.png"></a></div>
+            <div class="banners-s"><a href="#"><img src="image/baner-4.png"></a></div>
         </div>
     </div>
+    <div class="tab-desktop">
+    <ul class="tab">
+        <li><a href="#" class="tablinks" onclick="openTabs(event, 'whats')">WHATS HOT?</a></li>
+        <li><a href="#" class="tablinks" onclick="openTabs(event, 'DESIGNERS')">DESIGNERS</a></li>
+        <li><a href="#" class="tablinks" onclick="openTabs(event, 'FEATURED')">FEATURED</a></li>
+        <li><a href="#" class="tablinks" onclick="openTabs(event, 'LATEST')">LATEST</a></li>
+    </ul>
+        <div class="tab-mobile">
+            <select title="">
+                <option value="whats" class="tablinks" onclick="openTabs(event, 'whats')">WHATS HOT?</option>
+                <option value="designer" class="tablinks" onclick="openTabs(event, 'DESIGNERS')">DESIGNERS</option>
+                <option value="featured" class="tablinks" onclick="openTabs(event, 'FEATURED')">FEATURED</option>
+                <option value="latest" class="tablinks" onclick="openTabs(event, 'LATEST')">LATEST</option>
+            </select>
+        </div>
+
+    <div id="whats" class="tabcontent">
+        <ul>
+            <li class="tab_1"><picture><source srcset="image/tab_mob_1.jpg" media="(max-width: 760px)">
+                <source srcset="image/tab_1.jpg">
+                <img src="image/tab_1.jpg"></picture>
+                <div class="container">
+                    <h4>MIMOSA LACE DRESS</h4>
+                    <p>$76.95</p>
+                    <input type="button" class="button-c" value="ADD TO CART +">
+                </div>
+            </li>
+            <li><picture><source srcset="image/tab_mob_2.jpg" media="(max-width: 760px)">
+                <source srcset="image/tab_2.jpg">
+                <img src="image/tab_2.jpg"></picture>
+                <div class="container">
+                    <h4>WishVitalise Dress</h4>
+                    <p>$96.55</p>
+                    <input type="button" class="button-c" value="ADD TO CART +">
+                </div>
+            </li>
+            <li><picture><source srcset="" media="(max-width: 768px)">
+                <source srcset="">
+                <img src="image/tab_3.jpg"></picture>
+                <div class="container">
+                    <h4>HOT SHORTS</h4>
+                    <p>$35.95</p>
+                    <input type="button" class="button-c" value="ADD TO CART +">
+                </div>
+            </li>
+
+            <li><picture><source srcset="" media="(max-width: 768px)">
+                <source srcset="">
+                <img src="image/tab_3.jpg"></picture>
+                <div class="container">
+                    <h4>HOT SHORTS</h4>
+                    <p>$35.95</p>
+                    <input type="button" class="button-c" value="ADD TO CART +">
+                </div>
+            </li>
+            <li><picture><source srcset="" media="(max-width: 768px)">
+                <source srcset="">
+                <img src="image/tab_2.jpg"></picture>
+                <div class="container">
+                    <h4>PETROL SWEATER</h4>
+                    <p>$21.50</p>
+                    <input type="button" class="button-c" value="ADD TO CART +">
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+    <div id="DESIGNERS" class="tabcontent">
+        <img src="">
+    </div>
+
+    <div id="FEATURED" class="tabcontent">
+        <img src="">
+    </div>
+    <div id="LATEST" class="tabcontent">
+        <img src="">
+    </div>
+    </div>
+    <div class="sale">
+        <img src="image/sale.png">
+    </div>
+    <div class="saleit">
+        <ul>
+            <li>
+                <picture><source srcset="image/saleit-1-mob.png" media="(max-width: 760px)">
+                    <source srcset="image/saleit1.png">
+                    <img src="image/saleit1.png"></picture>
+                <div class="container">
+                    <h4>NADIA DRESS</h4>
+                    <p>$64.95</p>
+                    <input type="button" class="button-c" value="ADD TO CART +">
+                </div>
+            </li>
+            <li><picture><source srcset="image/saleit-2-mob.png" media="(max-width: 760px)">
+                <source srcset="image/saleit2.png">
+                <img src="image/saleit2.png"></picture>
+                <div class="container">
+                    <h4>SOFI BLOUSE</h4>
+                    <p>$26.95</p>
+                    <input type="button" class="button-c" value="ADD TO CART +">
+                </div>
+            </li>
+            <li><img src="image/saleit3.png">
+                <div class="container">
+                    <h4>GOODING SHORTS</h4>
+                    <p>$79.95</p>
+                    <input type="button" class="button-c" value="ADD TO CART +">
+                </div></li>
+            <li><img src="image/saleit4.png">
+                <div class="container">
+                    <h4>MIMOSA LACE DRESS</h4>
+                    <p>$76</p>
+                    <input type="button" class="button-c" value="ADD TO CART +">
+                </div></li>
+        </ul>
+        <div class="saleit-btn">
+            <a href="#">load more</a>
+        </div>
+    </div>
+    <div class="brands">
+        <h3>FAVOURITE BRANDS</h3>
+        <ul>
+            <li><a href="#"><img src="image/brend_8.png"></a></li>
+            <li><a href="#"><img src="image/brend_7.png"></a></li>
+            <li><a href="#"><img src="image/brend_6.png"></a></li>
+            <li><a href="#"><img src="image/brend_5.png"></a></li>
+            <li><a href="#"><img src="image/brend_4.png"></a></li>
+            <li><a href="#"><img src="image/brend_3.png"></a></li>
+            <li><a href="#"><img src="image/brend_2.png"></a></li>
+            <li><a href="#"><img src="image/brend_1.png"></a></li>
+        </ul>
+    </div>
+    <div class="about">
+        <h2>About LookShop</h2>
+        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. </p>
+    </div>
 </article>
+<footer>
+    <div class="cards">
+        <ul>
+            <li><a href="#">We accept</a></li>
+            <li><a href="#"><img src="image/card_11.png"></a></li>
+            <li><a href="#"><img src="image/card_10.png"></a></li>
+            <li><a href="#"><img src="image/card_9.png"></a></li>
+            <li><a href="#"><img src="image/card_8.png"></a></li>
+            <li><a href="#"><img src="image/card_7.png"></a></li>
+            <li><a href="#"><img src="image/card_6.png"></a></li>
+            <li><a href="#"><img src="image/card_5.png"></a></li>
+            <li><a href="#"><img src="image/card_4.png"></a></li>
+            <li><a href="#"><img src="image/card_3.png"></a></li>
+            <li><a href="#"><img src="image/card_2.png"></a></li>
+            <li><a href="#"><img src="image/card_1.png"></a></li>
+        </ul>
+    </div>
+    <div class="footer-list-menu">
+    <div class="sub-menu">
+        <div class="sub-menu-left">
+            <div class="sub-menu-left-row-1">
+        <ul class="customer">
+            <li><p>Customer Service</p></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Terms of payment</a></li>
+            <li><a href="#">Terms of sale</a></li>
+            <li><a href="#">Delivery terms and conditions</a></li>
+            <li><a href="#">Returns and refunds</a></li>
+        </ul>
+        <ul class="information">
+            <li><p>Information</p></li>
+            <li><a href="#">Affiliate</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">How to shop</a></li>
+            <li><a href="#">About Nelly</a></li>
+            <li><a href="#">Investor relations</a></li>
+        </ul>
+            </div>
+            <div class="sub-menu-left-row-2">
+        <ul class="campaigns">
+            <li><p>Campaigns</p></li>
+            <li><a href="#">Evening dresses</a></li>
+            <li><a href="#">Makeup</a></li>
+            <li><a href="#">Fashion forward</a></li>
+            <li><a href="#">Training clothes</a></li>
+            <li><a href="#">Special Occasion Dresses</a></li>
+        </ul>
+        <ul class="stores">
+            <li><p>Stores</p></li>
+            <li><a href="#">Paris</a></li>
+            <li><a href="#">New York</a></li>
+            <li><a href="#">London</a></li>
+            <li><a href="#">Madrid</a></li>
+            <li><a href="#">Tokio</a></li>
+        </ul>
+            </div>
+        </div>
+        <div class="sub-menu-right">
+        <ul class="social">
+            <li><p>Social</p>
+            <ul>
+                <li><a href="#"><img src="image/social_1.png"></a></li>
+                <li><a href="#"><img src="image/social_2.png"></a></li>
+                <li><a href="#"><img src="image/social_3.png"></a></li>
+                <li><a href="#"><img src="image/social_4.png"></a></li>
+                <li><a href="#"><img src="image/social_5.png"></a></li>
+                <li><a href="#"><img src="image/social_6.png"></a></li>
+            </ul>
+            </li>
+        </ul>
+        <ul class="secured">
+            <li><img src="image/secured.png"></li>
+        </ul>
+        </div>
+    </div>
+    </div>
+    <div class="f-menu">
+        <div class="f-menu-content">
+        <div class="f-menu-left">
+            <div><a href="#">Privacy & Cookies</a></div>
+            <div><a href="#">Terms & Conditions</a></div>
+            <div><a href="#">Accessibility</a></div>
+            <div><a href="#">Store Directory</a></div>
+            <div><a href="#">About Us</a></div>
+        </div>
+            <div class="f-menu-left-mobile" >
+                <button onclick="myFunction()" id="f-menu-left-mobile-btn" class=""><i class="fa fa-bars" aria-hidden="true"></i></button>
+                <div id="myDropdown_footer_mobile_menu" class="dropdown-content">
+                    <a href="#">Privacy & Cookies</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Accessibility</a>
+                    <a href="#">Store Directory</a>
+                    <a href="#">About Us</a>
+                </div>
+            </div>
+        <div class="f-menu-right">
+            <a href="#">© LookShop.com<br>All Rights Reserved</a>
+        </div>
+        </div>
+    </div>
+</footer>
+
+
 
 
 </body>

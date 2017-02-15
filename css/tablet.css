@@ -127,5 +127,56 @@
         width: 179px;
         height: 127px;
     }
+    .tabcontent li:nth-child(4), .tabcontent li:last-child {
+        display: none;
+    }
+    ul.tab {
+        margin-left: 0;
+    }
+    .tabcontent li {
+        margin: 0 15px;
+    }
+    .saleit li:last-child {
+        display: none;
+    }
+    .saleit {
+        width: 744px;
+    }
+    .brands li:last-child, .brands li:nth-child(7) {
+        display: none;
+    }
+    .about {
+        box-sizing: border-box;
+        height: 180px;
+    }
+    .about p {
+        width: 729px;
+        height: 84px;
+    }
+    .sub-menu ul {
+        box-sizing: border-box;
 
+        height: 170px;
+    }
+    .sub-menu-left {
+        box-sizing: border-box;
+        width: 420px;
+        height: 340px;
+    }
+    .sub-menu {
+        width: 760px;
+        height: 347px;
+    }
+
+    .sub-menu-right {
+        box-sizing: border-box;
+        width: 340px;
+        height: 340px;
+    }
+    .social ul {
+
+    }
+    .f-menu-left-mobile {
+        display: none;
+    }
 }

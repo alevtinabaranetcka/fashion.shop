@@ -1,6 +1,5 @@
-/**
- * Created by Alevtina on 28.11.2016.
- */
+
+
 $(document).ready(function(){
 var slideIndex = 0;
 showSlides();

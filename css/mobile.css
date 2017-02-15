@@ -39,6 +39,7 @@
  }
  .exchange select {
      width: 118px;
+     padding: 0 7px;
  }
  .user {
      display: inline-block;
@@ -250,5 +251,150 @@
     }
     .banners {
         display: none;
+    }
+    .tab {
+        display: none;
+    }
+    .tab-mobile {
+        margin-top: 26px;
+        display: inline-block;
+        width: 100%;
+        background-color: #f4845d;
+    }
+    .tab-mobile select {
+        font-size: 1.6em;
+        color: white;
+        display: inline-block;
+        height: 89px;
+        width: 100%;
+        background-color: #f4845d;
+    }
+    .tablinks {
+        padding: 25px 0;
+    }
+
+    .tabcontent {
+        display: flex;
+        width: 100%;
+        padding: 0;
+    }
+    .container {
+        height: 161px;
+    }
+    .container p {
+        color: #373737;
+        font-size: 1.6em;
+    }
+    .container h4 {
+        padding-top: 10px;
+        text-transform: uppercase;
+        font-weight: 200;
+        color: #373737;
+        font-size: 1em;
+    }
+    #whats {
+        display: flex;
+    }
+    .tabcontent ul li:nth-child(3), .tabcontent ul li:nth-child(4), .tabcontent ul li:nth-child(5) {
+        display: none;
+    }
+    .tabcontent ul {
+        margin: 34px auto;
+    }
+    .tabcontent li {
+        margin: 0 16px;
+        width: 274px;
+        height: 524px;
+    }
+    .button-c {
+        margin-bottom: 15px;
+        margin-top: 15px;
+        height: 68px;
+        width: 222px;
+        background-color: #fd926d;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.125em;
+        cursor: pointer;
+        box-shadow: 0 2px #dd6b44;
+    }
+    .saleit {
+        width: 100%;
+        height: auto;
+
+    }
+    .saleit ul li:nth-child(3), .saleit ul li:nth-child(4) {
+        display: none;
+    }
+
+    .brands {
+        display: none;
+    }
+    .about {
+        display: none;
+    }
+    .cards {
+        display: none;
+    }
+    .footer-list-menu {
+        display: none;
+    }
+    .f-menu-left {
+        display: none;
+    }
+    .f-menu-content {
+        width: 100%;
+    }
+    .f-menu-left-mobile {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 50%;
+        float: left;
+        clear: both;
+    }
+    .saleit-btn {
+        margin: 28px 0 36px 0;
+        display: inline-block;
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .saleit ul {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .saleit{
+     display: inline-block;
+        margin: 0 auto;
+    }
+    .saleit-btn a {
+        display: inline-block;
+        text-transform: uppercase;
+        color: white;
+        padding: 20px 60px;
+        text-align: center;
+        background: black;
+    }
+    .saleit-btn a:hover {
+        box-shadow: #3a3a3a;
+        color: whitesmoke;
+        opacity: 0.6;
+    }
+    #f-menu-left-mobile-btn  {
+        background: transparent;
+        color: white;
+        font-size: xx-large;
+        border: none;
+        padding-left: 30px;
+    }
+    .f-menu-right {
+        font-size: 1.5em;
+        box-sizing: border-box;
+        width: 50%;
+        float: right;
+        padding-right: 30px;
     }
 }
