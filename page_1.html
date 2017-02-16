@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Women_clothes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/page_1.css" rel="stylesheet" type="text/css">
+    <link href="css/page_1_media.css" rel="stylesheet">
+    <link href="css/tablet.css" type="text/css" rel="stylesheet"
+          media="only screen and (min-width : 760px) and (max-width : 1199px)">
+    <link href="css/mobile.css" type="text/css" rel="stylesheet"
+          media="only screen and (min-width : 640px) and (max-width : 760px)">
+    <link href="css/mobile(320).css" type="text/css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/e60d01d408.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/tab.js"></script>
+    <script type="text/javascript" src="js/filter.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+<body>
+
+<div class="top">
+    <div class="top_left">
+        <p>custom care:</p>
+        <p>888-23-4567</p>
+    </div>
+    <div class="top_right">
+        <div class="exchange">
+            <select title="$ US">
+                <option value="us">$ US</option>
+                <option value="us">$ US</option>
+            </select>
+        </div>
+        <div class="user">
+
+            <a href="#"> <img src="image/user.png">my account</a>
+        </div>
+        <div class="search">
+            <!--<button id="open"></button>-->
+            <div id="form">
+                <form action="#" method="post">
+                    <input class="search-form" type="text" value="" placeholder=""/>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="top_line">
+    <div class="logo">
+        <img src="image/logo-big.png">
+    </div>
+    <div class="menu">
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">new<img src="image/caret-down.png"></button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">designers<img src="image/caret-down.png"></button>
+            <div id="myDropdown2" class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">women<img src="image/caret-down.png"></button>
+            <div id="myDropdown3" class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">men<img src="image/caret-down.png"></button>
+            <div id="myDropdown4" class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">clearence<img src="image/caret-down.png"></button>
+            <div id="myDropdown5" class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+    </div>
+    <div class="right_bloc">
+        <div class="card">
+            <form action="#" method="post">
+                <input type="text" id="cardcode" pattern="[0-9]{4}\s[0-9]{4}\s[0-9]{4}\s[0-9]{4}" placeholder="Your card">
+            </form>
+        </div>
+        <div class="bag_image"><a href="#"><img src="image/bag-big.png"></a></div>
+        <div class="bag_text"><a href="#">0 items | 0 $</a> </div>
+    </div>
+    <div class="menu_mobile">
+        <div id="menu_mobile" class="dropdown">
+            <button onclick="myFunction()" id="btn-text" class="dropbtn">menu</button>
+            <button onclick="myFunction()" id="btn-bar" class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
+            <div id="myDropdown_mobile_menu" class="dropdown-content">
+                <a href="#">new</a>
+                <a href="#">designers</a>
+                <a href="#">women</a>
+                <a href="#">men</a>
+                <a href="#">clearence</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="breadcrumb">
+    <ul>
+        <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+        <li><a href="#">Clothes</a></li>
+    </ul>
+</div>
+
+<div class="slide-products">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="slide-products-item">
+                <img src="image/Slide.jpg">
+            </div>
+            <!--
+            <div class="slide-products-text">
+                <div class="slide-products-price">
+                    <h3>Open Heart Top</h3>
+                    <h2>$13.95</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="but-n">
+                    <input type="button" class="button" value="ADD TO CART +">
+                </div>
+            </div>
+            -->
+        </div>
+        <div class="mySlides fade">
+            <div class="slide-products-item">
+                <img src="image/Slide.jpg">
+            </div>
+            <!--
+            <div class="slide-products-text">
+                <div class="slide-products-price">
+                    <h3>Open Heart Top</h3>
+                    <h2>$13.95</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="but-n">
+                    <input type="button" class="button" value="ADD TO CART +">
+                </div>
+            </div>
+            -->
+        </div>
+        <div class="mySlides fade">
+            <div class="slide-products-item">
+                <img src="image/Slide.jpg">
+            </div>
+            <!--
+            <div class="slide-products-text">
+                <div class="slide-products-price">
+                    <h3>Open Heart Top</h3>
+                    <h2>$13.95</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="but-n">
+                    <input type="button" class="button" value="ADD TO CART +">
+                </div>
+            </div>
+            -->
+        </div>
+        <div class="mySlides fade">
+            <div class="slide-products-item">
+                <img src="image/Slide.jpg">
+            </div>
+            <!--
+            <div class="slide-products-text">
+                <div class="slide-products-price">
+                    <h3>Open Heart Top</h3>
+                    <h2>$13.95</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="but-n">
+                    <input type="button" class="button" value="ADD TO CART +">
+                </div>
+            </div>
+            -->
+        </div>
+        <div class="mySlides fade">
+            <div class="slide-products-item">
+                <img src="image/Slide.jpg">
+            </div>
+            <!--
+            <div class="slide-products-text">
+                <div class="slide-products-price">
+                    <h3>Open Heart Top</h3>
+                    <h2>$13.95</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="but-n">
+                    <input type="button" class="button" value="ADD TO CART +">
+                </div>
+            </div>
+            -->
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</div>
+
+
+<section class="products-body">
+    <article class="products-body-left">
+    <div class="nav">
+        <div class="sort">
+            <p>Sort by</p>
+            <ul>
+                <li>Date</li>
+                <li><a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <div class="pages">
+            <p id="pages">Showing 1 - 12 of 347 results</p>
+            <ul>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </div>
+        <ul class="products-body-left-item">
+            <li>
+                <div class="model">
+                    <img src="image/card1.png">
+                    <div class="container">
+                        <h4><b>NADIA DRESS</b></h4>
+                        <p>$64.95</p>
+                        <input type="button" class="button-c" value="ADD TO CART +">
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="model">
+                    <img src="image/card2.png">
+                    <div class="container">
+                        <h4><b>SOFI BLOUSE</b></h4>
+                        <p>$26.95</p>
+                        <input type="button" class="button-c" value="ADD TO CART +">
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="model">
+                    <img src="image/card3.png">
+                    <div class="container">
+                        <h4><b>GOODING SHORTS</b></h4>
+                        <p>$79.95</p>
+                        <input type="button" class="button-c" value="ADD TO CART +">
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="model">
+                    <img src="image/card4.png">
+                    <div class="container">
+                        <h4><b>NADIA DRESS</b></h4>
+                        <p>$64.95</p>
+                        <input type="button" class="button-c" value="ADD TO CART +">
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="model">
+                    <img src="image/card5.png">
+                    <div class="container">
+                        <h4><b>SOFI BLOUSE</b></h4>
+                        <p>$26.95</p>
+                        <input type="button" class="button-c" value="ADD TO CART +">
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="model">
+                    <img src="image/card6.png">
+                    <div class="container">
+                        <h4><b>GOODING SHORTS</b></h4>
+                        <p>$79.95</p>
+                        <input type="button" class="button-c" value="ADD TO CART +">
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="model">
+                    <img src="image/card7.png">
+                    <div class="container">
+                        <h4><b>NADIA DRESS</b></h4>
+                        <p>$64.95</p>
+                        <input type="button" class="button-c" value="ADD TO CART +">
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="model">
+                    <img src="image/card8.png">
+                    <div class="container">
+                        <h4><b>SOFI BLOUSE</b></h4>
+                        <p>$26.95</p>
+                        <input type="button" class="button-c" value="ADD TO CART +">
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="model">
+                    <img src="image/card9.png">
+                    <div class="container">
+                        <h4><b>GOODING SHORTS</b></h4>
+                        <p>$79.95</p>
+                        <input type="button" class="button-c" value="ADD TO CART +">
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </article>
+
+    <aside class="products-body-right">
+        <div class="products-body-right-menu">
+            <div class="products-body-right-menu-title">
+                <a href="#">CATEGORIES</a>
+            </div>
+            <div class="products-body-right-menu-item">
+                <div class="products-body-right-menu-item-left">
+                    <a href="#">NEW</a>
+                </div>
+                <div class="products-body-right-menu-item-right">
+                    <a href="#">+</a>
+                </div>
+                <div class="sub">
+                    <div>
+                        <span><a href="#">new1</a></span>
+                    </div>
+                </div>
+                <div class="sub">
+                    <div>
+                        <a href="#">new-2</a>
+                    </div>
+                </div>
+                <div class="sub">
+                    <div>
+                        <a href="#">new-3</a>
+                    </div>
+                </div>
+            </div>
+            <div class="products-body-right-menu-item">
+                <div class="products-body-right-menu-item-left">
+                    <a href="#">DESIGNERS</a>
+                </div>
+                <div class="products-body-right-menu-item-right">
+                    <a href="#">+</a>
+                </div>
+                <div class="sub">
+                    <div >
+                        <a href="#">new1</a>
+                    </div>
+                </div>
+                <div class="sub">
+                    <div>
+                        <a href="#">new-2</a>
+                    </div>
+                </div>
+                <div class="sub">
+                    <div>
+                        <a href="#">new-3</a>
+                    </div>
+                </div>
+            </div>
+            <div class="products-body-right-menu-item">
+                <div class="products-body-right-menu-item-left">
+                    <a href="#">WOMEN</a>
+                </div>
+                <div class="products-body-right-menu-item-right">
+                    <a href="#">+</a>
+                </div>
+                <div class="sub">
+                    <div>
+                        <a href="#">new1</a>
+                    </div>
+                </div>
+                <div class="sub">
+                    <div>
+                        <a href="#">new-2</a>
+                    </div>
+                </div>
+                <div class="sub">
+                    <div>
+                        <a href="#">new-3</a>
+                    </div>
+                </div>
+            </div>
+            <div class="products-body-right-menu-item">
+                <div class="products-body-right-menu-item-left">
+                    <a href="#">MEN</a>
+                </div>
+                <div class="products-body-right-menu-item-right">
+                    <a href="#">+</a>
+                </div>
+                <div class="sub">
+                    <div>
+                        <a href="#">new1</a>
+                    </div>
+                </div>
+                <div class="sub">
+                    <div>
+                        <a href="#">new-2</a>
+                    </div>
+                </div>
+                <div class="sub">
+                    <div>
+                        <a href="#">new-3</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="products-body-right-menu-item">
+                <div class="products-body-right-menu-item-left">
+                    <a href="#">CLEARANCE</a>
+                </div>
+                <div class="products-body-right-menu-item-right">
+                    <a href="#">+</a>
+                </div>
+                <div class="sub">
+                    <div >
+                        <a href="#">new1</a>
+                    </div>
+                </div>
+                <div class="sub">
+                    <div>
+                        <a href="#">new-2</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="filter">
+            <div id="slider-range" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+                <div class="ui-slider-range ui-corner-all ui-widget-header" style="left: auto; width: auto;"></div>
+                <span class="ui-slider-handle ui-corner-all ui-state-default" tabindex="0" style="left: auto;"></span>
+                <span class="ui-slider-handle ui-corner-all ui-state-default" tabindex="0" style="left: auto;"></span>
+                <div class="ui-slider-range ui-corner-all ui-widget-header" style="left: auto; width: auto;"></div>
+            </div>
+            <div class="filter-down">
+                <p>PRICE $0 - $200</p>
+                <input type="button" class="button-f" value="FILTER">
+            </div>
+        </div>
+        <div class="size">
+            <p>SELECT YOUR SIZE</p>
+            <ul>
+                <li><a href="#">XS</a></li>
+                <li><a href="#">S</a></li>
+                <li><a href="#">M</a></li>
+                <li><a href="#">L</a></li>
+                <li><a href="#">XL</a></li>
+            </ul>
+        </div>
+        <div class="on-sale">
+            <div class="products-body-right-menu-title">
+                <a href="#">ON SALE</a>
+            </div>
+</div>
+        <div class="bloc">
+            <div class="bloc-r">
+                <div class="name-item">Basic Sunglasses</div>
+                <div class="price-item">$14.95</div>
+            </div>
+            <div class="bloc-l">
+                <div><img src="image/on_sale1.png">
+                </div>
+            </div>
+
+        </div>
+        <div class="bloc">
+            <div class="bloc-r">
+                <div class="name-item">Billie J</div>
+                <div class="price-item">$69.49</div>
+            </div>
+            <div class="bloc-l"  >
+                <img src="image/on_sale2.png">
+            </div>
+        </div>
+        <div class="bloc">
+            <div class="bloc-r">
+                <div class="name-item">Sandie Shopperbag</div>
+                <div class="price-item">$69.95</div>
+            </div>
+            <div class="bloc-l">
+                <img src="image/on_sale3.png">
+            </div>
+        </div>
+
+        <div class="featured-products">
+            <div class="products-body-right-menu-title">
+                <a href="#">FEATURED PRODUCTS</a>
+            </div>
+            <div class="bloc">
+                <div class="bloc-r">
+                    <div class="name-item">PINTUCK TANK</div>
+                    <div class="price-item">$45.55</div>
+                </div>
+                <div class="bloc-l">
+                    <div><img src="image/feature-products1.png">
+                    </div>
+                </div>
+            </div>
+            <div class="bloc">
+                <div class="bloc-r">
+                    <div class="name-item">FOLICIA SILK SHIRT</div>
+                    <div class="price-item">$69.49</div>
+                </div>
+                <div class="bloc-l">
+                    <div><img src="image/feature-products2.png">
+                    </div>
+                </div>
+            </div>
+            <div class="bloc">
+                <div class="bloc-r">
+                    <div class="name-item">Laylala Shirt</div>
+                    <div class="price-item">$78.25</div>
+                </div>
+                <div class="bloc-l">
+                    <div><img src="image/feature-products3.png">
+                    </div>
+                </div>
+            </div>
+    </aside>
+    </section>
+
+    <footer>
+        <div class="cards">
+            <ul>
+                <li><a href="#">We accept</a></li>
+                <li><a href="#"><img src="image/card_11.png"></a></li>
+                <li><a href="#"><img src="image/card_10.png"></a></li>
+                <li><a href="#"><img src="image/card_9.png"></a></li>
+                <li><a href="#"><img src="image/card_8.png"></a></li>
+                <li><a href="#"><img src="image/card_7.png"></a></li>
+                <li><a href="#"><img src="image/card_6.png"></a></li>
+                <li><a href="#"><img src="image/card_5.png"></a></li>
+                <li><a href="#"><img src="image/card_4.png"></a></li>
+                <li><a href="#"><img src="image/card_3.png"></a></li>
+                <li><a href="#"><img src="image/card_2.png"></a></li>
+                <li><a href="#"><img src="image/card_1.png"></a></li>
+            </ul>
+        </div>
+        <div class="footer-list-menu">
+            <div class="sub-menu">
+                <div class="sub-menu-left">
+                    <div class="sub-menu-left-row-1">
+                        <ul class="customer">
+                            <li><p>Customer Service</p></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Terms of payment</a></li>
+                            <li><a href="#">Terms of sale</a></li>
+                            <li><a href="#">Delivery terms and conditions</a></li>
+                            <li><a href="#">Returns and refunds</a></li>
+                        </ul>
+                        <ul class="information">
+                            <li><p>Information</p></li>
+                            <li><a href="#">Affiliate</a></li>
+                            <li><a href="#">Cookies</a></li>
+                            <li><a href="#">How to shop</a></li>
+                            <li><a href="#">About Nelly</a></li>
+                            <li><a href="#">Investor relations</a></li>
+                        </ul>
+                    </div>
+                    <div class="sub-menu-left-row-2">
+                        <ul class="campaigns">
+                            <li><p>Campaigns</p></li>
+                            <li><a href="#">Evening dresses</a></li>
+                            <li><a href="#">Makeup</a></li>
+                            <li><a href="#">Fashion forward</a></li>
+                            <li><a href="#">training clothes</a></li>
+                            <li><a href="#">Special Occasion Dresses</a></li>
+                        </ul>
+                        <ul class="stores">
+                            <li><p>Stores</p></li>
+                            <li><a href="#">Paris</a></li>
+                            <li><a href="#">New York</a></li>
+                            <li><a href="#">London</a></li>
+                            <li><a href="#">Madrid</a></li>
+                            <li><a href="#">Tokio</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-menu-right">
+                    <ul class="social">
+                        <li><p>Social</p>
+                            <ul>
+                                <li><a href="#"><img src="image/social_1.png"></a></li>
+                                <li><a href="#"><img src="image/social_2.png"></a></li>
+                                <li><a href="#"><img src="image/social_3.png"></a></li>
+                                <li><a href="#"><img src="image/social_4.png"></a></li>
+                                <li><a href="#"><img src="image/social_5.png"></a></li>
+                                <li><a href="#"><img src="image/social_6.png"></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="secured">
+                        <li><img src="image/secured.png"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="f-menu">
+            <div class="f-menu-content">
+                <div class="f-menu-left">
+                    <div><a href="#">Privacy & Cookies</a></div>
+                    <div><a href="#">Terms & Conditions</a></div>
+                    <div><a href="#">Accessibility</a></div>
+                    <div><a href="#">Store Directory</a></div>
+                    <div><a href="#">About Us</a></div>
+                </div>
+                <div class="f-menu-left-mobile" >
+                    <button onclick="myFunction()" id="f-menu-left-mobile-btn" class=""><i class="fa fa-bars" aria-hidden="true"></i></button>
+                    <div id="myDropdown_footer_mobile_menu" class="dropdown-content">
+                        <a href="#">Privacy & Cookies</a>
+                        <a href="#">Terms & Conditions</a>
+                        <a href="#">Accessibility</a>
+                        <a href="#">Store Directory</a>
+                        <a href="#">About Us</a>
+                    </div>
+                </div>
+                <div class="f-menu-right">
+                    <a href="#">© LookShop.com<br>All Rights Reserved</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

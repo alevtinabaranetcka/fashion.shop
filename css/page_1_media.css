@@ -1,0 +1,218 @@
+@media only screen and (min-width: 760px) and (max-width: 1199px) {
+    .slide-products {
+        width: 100%;
+    }
+    .nav {
+        width: 100%;
+    }
+    .products-body {
+        width: 760px;
+    }
+    .products-body-left {
+        width: 68%;
+    }
+    .products-body-left-item {
+        text-align: center;
+    }
+    .products-body-right {
+        width: 30%;
+    }
+    .products-body-left-item li:nth-child(2), .products-body-left-item li:nth-child(5), .products-body-left-item li:nth-child(8) {
+        display: none;
+    }
+    .pages p {
+        display: none;
+    }
+    .pages {
+        margin-right: 0;
+    }
+    .f-menu-content {
+        width: 100%;
+    }
+    .f-menu-left {
+        width: 86%;
+    }
+}
+
+@media only screen and  (min-width: 640px) and (max-width: 759px) {
+    .products-body {
+        width: 640px;
+    }
+    .products-body-left {
+        width: 392px;
+    }
+    .slide-products {
+        margin: 0;
+    }
+    .nav {
+        width: 100%;
+    }
+    .pages {
+        margin-right: 0;
+    }
+    .pages p {
+        display: none;
+    }
+
+    .model {
+        width: auto;
+    }
+    .model img {
+        width: 180px;
+        height: auto;
+    }
+    input.button-c {
+        width: 175px;
+    }
+    .container {
+        padding: 0;
+    }
+    .products-body-left-item {
+         text-align: center;
+    }
+    .products-body-left-item li {
+        margin-right: 10px;
+    }
+    .products-body-left-item li:nth-child(2), .products-body-left-item li:nth-child(5), .products-body-left-item li:nth-child(8){
+        display: none;
+    }
+}
+
+@media only screen and  (min-width: 321px) and (max-width: 639px) {
+    .slide-products {
+        display: none;
+    }
+    .products-body {
+        width: 100%;
+    }
+    .products-body-left {
+        width: auto;
+    }
+    .nav {
+        margin: 25px 0;
+        width: 100%;
+    }
+    .pages p {
+        display: none;
+    }
+    .pages ul li:nth-child(3) {
+        display: none;
+    }
+    .pages {
+        margin-right: 0;
+    }
+    .model {
+        width: 150px;
+    }
+    .products-body-left-item img {
+        width: 150px;
+        height: auto;
+    }
+    .products-body-left-item li {
+        margin-right: 8px;
+    }
+    ul.products-body-left-item {
+        text-align: center;
+    }
+    .products-body-left {
+        width: 100%;
+    }
+    .products-body-left-item li:last-child,
+    .products-body-left-item li:nth-child(4),
+    .products-body-left-item li:nth-child(5),
+    .products-body-left-item li:nth-child(6),
+    .products-body-left-item li:nth-child(7),
+    .products-body-left-item li:nth-child(8) {
+        display: none;
+    }
+    .container h4 {
+        font-size: 0.6em;
+    }
+    .products-body-right-menu {
+        display: none;
+    }
+    .filter {
+        display: none;
+    }
+    .size {
+        display: none;
+    }
+    .products-body-right {
+        float: none;
+        width: 100%;
+    }
+    .bloc {
+        width: 100%;
+    }
+
+}
+
+@media only screen and  (max-width: 320px) {
+    .model {
+        width: 99%;
+    }
+    .model img {
+        width: 100%;
+    }
+    .products-body-left-item img {
+        width: 150px;
+        height: auto;
+    }
+    .products-body-left-item li {
+        margin-right: 8px;
+    }
+    .products-body-left-item li:last-child,
+    .products-body-left-item li:nth-child(5),
+    .products-body-left-item li:nth-child(6),
+    .products-body-left-item li:nth-child(7),
+    .products-body-left-item li:nth-child(8) {
+        display: none;
+    }
+    .container h4 {
+        font-size: 0.6em;
+    }
+    .products-body-right-menu {
+        display: none;
+    }
+    .filter {
+        display: none;
+    }
+    .size {
+        display: none;
+    }
+    .products-body-right {
+        float: none;
+        width: 100%;
+    }
+    .bloc {
+        width: 100%;
+    }
+    .slide-products {
+        display: none;
+    }
+    .products-body {
+        width: 100%;
+    }
+    .products-body-left {
+        width: 100%;
+    }
+    .nav {
+        width: 100%;
+        text-align: center;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .pages p {
+        display: none;
+    }
+    .pages {
+        float: none;
+        margin-right: 0;
+    }
+    .sort {
+        margin: 10px 0;
+    }
+    .products-body-left-item {
+        text-align: center;
+    }
+}
